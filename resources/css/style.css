@@ -46,3 +46,7 @@ header {
 .contact-icon {
     padding: 10px;
 }
+
+.contact-icon:hover {
+    opacity: 0.5;
+}
