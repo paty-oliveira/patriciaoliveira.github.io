@@ -28,10 +28,6 @@ header {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-#portfolio-name {
-    color: var(--secondary-color-text);
-}
-
 .nav-item {
     color: var(--primary-color-text);
     text-decoration: none;
