@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
     padding: 0 20px ;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -46,6 +47,15 @@ header {
 
 .contact-icon:hover {
     opacity: 0.5;
+}
+
+.burger-menu {
+    display: none;
+    font-size: var(--primary-font-size);
+    color: var(--secondary-color-text);
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
 }
 
 /*  About Me Section Style */
