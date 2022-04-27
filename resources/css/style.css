@@ -18,7 +18,6 @@ html {
 /* Navigation Bar Style */
 
 header {
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
@@ -61,6 +60,7 @@ header {
 /*  About Me Section Style */
 
 #about-me-section {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,12 +89,13 @@ header {
 }
 
 .skills-container {
+    width: 700px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 700px;
-    height: 200px;
+
 }
 
 .skills-item  {
@@ -109,4 +110,70 @@ header {
     width: 40px;
     height: 40px;
     padding: 5px;
+}
+
+/* Projects Section Style */
+
+#projects-section {
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#projects-section h2 {
+    font-weight: normal;
+}
+
+.projects-container {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.project-item, h3 {
+    font-weight: normal;
+    font-size: var(--secondary-font-size);
+    text-align: center;
+}
+
+.project-item {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(139, 142, 175, 0.33);
+    border-radius: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--secondary-color-text);
+    padding: 15px;
+}
+
+.project-link:hover {
+    opacity: 0.6;
+}
+
+.project-icon {
+    width: 90%;
+    height: 60%;
+    opacity: 0.7;
+    padding: 15px;
 }
