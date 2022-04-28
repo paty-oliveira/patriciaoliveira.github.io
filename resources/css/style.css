@@ -1,10 +1,7 @@
 /* Global Variables */
 :root {
     --font-family: 'Ubuntu', sans-serif;
-    --primary-color-text: #000000;
     --secondary-color-text: #D84949;
-    --thirdy-color-text: #FFFFFF;
-    --input-box-color: rgba(216, 73, 73, 0.58);
     --primary-font-size: 24px;
     --secondary-font-size: 20px;
 }
