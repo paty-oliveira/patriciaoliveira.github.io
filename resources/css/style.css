@@ -239,6 +239,21 @@ header {
     cursor: pointer;
 }
 
+/* Scroll to Top Button Style */
+
+.scroll-up-button {
+    position: fixed;
+    right: 0.5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.up-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* Footer Section Style */
 
 footer {
     font-size: 18px;
