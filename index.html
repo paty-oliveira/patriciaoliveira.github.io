@@ -19,7 +19,7 @@
             <nav>
                 <a class="nav-item" href="#about-me-section">About Me</a>
                 <a class="nav-item" href="#projects-section">Projects</a>
-                <a class="nav-item" href="#Contacts-section">Contacts</a>
+                <a class="nav-item" href="#contact-section">Contacts</a>
             </nav>
             <div class="contacts-icons-container">
                 <a class="contact-icon" href="https://github.com/paty-oliveira" target="_blank" rel="noopener noreferrer"><img src="resources/images/github-logo.svg" alt="Github profile"></a>
@@ -61,7 +61,7 @@
 
         <!-- Projects Section -->
         <section id="projects-section">
-            <h2>Some Things I've Built</h2>
+            <h2 class="section-title">Some Things I've Built</h2>
             <div class="projects-container">
                 <div class="project-item" >
                     <img class="project-icon" loading="lazy" src="resources/images/crossfit-fiz-screenshot.png" alt="Screenshot of Crossfit Foz website">
@@ -74,6 +74,62 @@
                     <a class="project-link" href="https://github.com/paty-oliveira/codecademy-frontend/tree/main/my-company-homepage" target="_blank">Check it Out</a>
                 </div>
             </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contact-section">
+            <h2 class="section-title">Send me a message!</h2>
+            <div class="contact-form-container">
+                <div class="contact-form-item">
+                    <form action="https://formspree.io/f/mvolvbop" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input
+                                    type="text"
+                                    id="name"
+                                    name="sender-name"
+                                    placeholder="Enter Your Name"
+                                    class="input-field"
+                                    required
+                            />
+                        </div>
+                        <div class="form-control">
+                        <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="sender-email"
+                                placeholder="Enter Your Email"
+                                class="input-field"
+                                required
+                        />
+                        </div>
+                        <div class="form-control">
+                        <label for="message">Message</label>
+                            <textarea
+                                    id="message"
+                                    cols="60"
+                                    rows="10"
+                                    placeholder="Enter Your Message"
+                                    name="message"
+                                    class="input-field"
+                                    required
+                            ></textarea>
+                        </div>
+                        <input
+                                type="submit"
+                                value="Submit"
+                                id="submit-btn"
+                                class="submit-btn"
+                        />
+                    </form>
+                </div>
+
+
+
+            </div>
+
+
         </section>
 
     </main>
