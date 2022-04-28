@@ -238,3 +238,9 @@ header {
     border: 2px solid var(--secondary-color-text);
     cursor: pointer;
 }
+
+
+footer {
+    font-size: 18px;
+    text-align: center;
+}
