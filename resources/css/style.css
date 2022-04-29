@@ -197,12 +197,12 @@ h3 {
     flex-direction: column;
     border-radius: 5px;
     padding: 25px;
+    width: 30%;
 }
 
 .contact-form-container label {
     line-height: 2.7em;
-    color: var(--secondary-color-text);
-    font-weight: bold;
+    font-size: var(--secondary-font-size);
 }
 
 .contact-form-container textarea {
@@ -215,32 +215,31 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
-    border: 2px solid var(--secondary-color-text);
+    border: 2px solid rgba(101, 103, 115, 0.33);
     font-size: var(--secondary-font-size);
     outline: none;
 }
 
 .input-field::placeholder {
     padding: 0.5rem;
-    color: var(--secondary-color-text);
 }
 
 .submit-btn {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    background-color: #fff;
+    background-color: var(--secondary-color-text);
     border: 2px solid var(--secondary-color-text);
+    color: white;
     border-radius: 5px;
     font-size: var(--secondary-font-size);
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary-color-text);
-    border: 2px solid var(--secondary-color-text);
     cursor: pointer;
+    opacity: 0.5;
 }
 
 
