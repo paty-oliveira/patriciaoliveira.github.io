@@ -17,21 +17,17 @@ html {
 /* Navigation Bar Style */
 
 header {
-    top: 0;
-    left: 0;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
     color: var(--secondary-color-text);
     text-decoration: none;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .nav-item:hover {
@@ -39,7 +35,7 @@ header {
 }
 
 .contact-icon {
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .contact-icon:hover {
@@ -64,12 +60,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 100px;
+    padding: 6.25rem 6.5rem;
 }
 
 #about-me-section h1 {
     font-weight: normal;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 #my-photo {
@@ -84,12 +80,12 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
 }
 
 .skills-container {
-    width: 700px;
-    height: 100px;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,37 +103,42 @@ header {
 .tool-icon {
     width: 40px;
     height: 40px;
-    padding: 5px;
+    padding: 0.313rem;
 }
 
 
 /* Projects Section Style */
 
 #projects-section {
-    width: 100%;
-    height: 60%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 0 0 0;
 }
 
 .section-title {
     font-weight: normal;
 }
 
+.project-icon {
+    width: 90%;
+    height: 90%;
+    opacity: 0.7;
+}
+
 .projects-container {
-    width: 1000px;
-    height: 100%;
-    margin: auto;
+    width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 40px;
+    padding: 1rem;
+}
+
+.project-item {
+    width: 30%;
+    box-shadow: 0 3px 10px rgba(139, 142, 175, 0.33);
+    border-radius: 10px;
+    padding: 1.2rem;
 }
 
 .project-item,
@@ -147,36 +148,15 @@ h3 {
     text-align: center;
 }
 
-.project-item {
-    width: 35%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgba(139, 142, 175, 0.33);
-    border-radius: 10px;
-}
-
 .project-link {
     text-decoration: none;
     font-weight: bold;
     color: var(--secondary-color-text);
-    padding: 15px;
 }
 
 .project-link:hover {
     opacity: 0.6;
     text-decoration-line: underline;
-}
-
-.project-icon {
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    padding: 15px;
 }
 
 
@@ -188,16 +168,16 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 3.125rem;
 }
 
 .contact-form-container {
+    max-width: 20.75rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    padding: 25px;
-    width: 30%;
+    padding: 1.563rem;
 }
 
 .contact-form-container label {
@@ -212,8 +192,8 @@ h3 {
 
 .contact-form-container .input-field {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
     border-radius: 5px;
     border: 2px solid rgba(101, 103, 115, 0.33);
     font-size: var(--secondary-font-size);
@@ -226,12 +206,12 @@ h3 {
 
 .submit-btn {
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 10px 0;
     background-color: var(--secondary-color-text);
     border: 2px solid var(--secondary-color-text);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: var(--secondary-font-size);
     font-weight: bold;
     transition: 0.5s;
@@ -263,4 +243,37 @@ h3 {
 footer {
     font-size: 18px;
     text-align: center;
+}
+
+
+/* Media Queries for Tablets and Mobile Phones (max-width 720px) */
+
+@media screen and (max-width: 720px) {
+    .burger-menu {
+        display: block;
+        font-size: 50px;
+    }
+    nav {
+        display: none;
+    }
+    #my-photo {
+        height: 150px;
+        width: 150px;
+    }
+    .tool-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .contacts-icons-container {
+        display: none;
+    }
+    .scroll-up-button {
+        display: none;
+    }
+    .projects-container {
+        flex-direction: column;
+    }
+    .contact-form-container {
+        max-width: 15rem;
+    }
 }
