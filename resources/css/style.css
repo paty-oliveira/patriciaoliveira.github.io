@@ -13,15 +13,28 @@ html {
     scroll-behavior: smooth;
 }
 
+li {
+    list-style: none;
+}
+
 
 /* Navigation Bar Style */
 
-header {
+nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 1.25rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-item {
@@ -34,6 +47,13 @@ header {
     opacity: 0.6;
 }
 
+.contacts-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contact-icon {
     padding: 0.5rem;
 }
@@ -44,11 +64,15 @@ header {
 
 .burger-menu {
     display: none;
-    font-size: var(--primary-font-size);
-    color: var(--secondary-color-text);
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 
@@ -253,13 +277,22 @@ footer {
 
 /* Media Queries for Tablets and Mobile Phones (max-width 720px) */
 
-@media screen and (max-width: 720px) {
-    .burger-menu {
-        display: block;
-        font-size: 50px;
-    }
+@media screen and (max-width: 650px) {
     nav {
-        display: none;
+        justify-content: space-evenly;
+    }
+    .contacts-icons-container {
+        flex-direction: column;
+    }
+    #my-name {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .nav-menu {
+        width: 30%;
+        flex-direction: column;
     }
     #my-photo {
         height: 150px;
@@ -268,9 +301,6 @@ footer {
     .tool-icon {
         width: 25px;
         height: 25px;
-    }
-    .contacts-icons-container {
-        display: none;
     }
     .scroll-up-button {
         display: none;
